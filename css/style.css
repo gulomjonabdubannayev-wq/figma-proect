@@ -7,6 +7,9 @@ body {
     background: #111;
     color: white;
     font-family: Arial, sans-serif;
+    width: 100%;
+    height: 33px;
+    border-color: #6335ce;
 }
 .top {
     height: 36px;

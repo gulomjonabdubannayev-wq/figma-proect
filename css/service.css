@@ -1,0 +1,361 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#101010;
+    color:#fff;
+    font-family:Arial,sans-serif;
+}
+
+header{
+    width:100%;
+    height:58px;
+    padding:0 7%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background:#151515;
+    border-top:1px solid #7038ed;
+    border-bottom:1px solid #292929;
+}
+
+.logo{
+    font-size:12px;
+    font-weight:600;
+}
+
+nav{
+    display:flex;
+    gap:28px;
+}
+
+nav a{
+    color:#aaa;
+    text-decoration:none;
+    font-size:9px;
+}
+
+header button{
+    background:#151515;
+    border:1px solid #333;
+    color:#fff;
+    padding:8px 13px;
+    border-radius:4px;
+    font-size:8px;
+}
+
+main{
+    width:100%;
+}
+
+.journey{
+    width:82%;
+    max-width:1200px;
+    min-height:390px;
+    margin:0 auto;
+    padding:55px 0;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:55px;
+    align-items:center;
+}
+
+.journey-content{
+    max-width:520px;
+}
+
+.small-title{
+    color:#888;
+    font-size:8px;
+}
+
+h1{
+    font-size:25px;
+    font-weight:500;
+    margin:9px 0;
+}
+
+.journey-content>p,
+.section-heading>p,
+.value-text>p{
+    color:#777;
+    font-size:8px;
+    line-height:1.7;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:7px;
+    margin-top:28px;
+}
+
+.stats div{
+    background:#151515;
+    border:1px solid #292929;
+    border-radius:5px;
+    padding:13px 9px;
+}
+
+.stats strong{
+    display:block;
+    font-size:13px;
+    margin-bottom:4px;
+}
+
+.stats span{
+    color:#666;
+    font-size:6px;
+}
+
+.journey-image{
+    height:280px;
+    border:1px solid #292929;
+    border-radius:6px;
+    overflow:hidden;
+}
+
+.journey-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.values{
+    width:82%;
+    max-width:1200px;
+    margin:0 auto;
+    padding:35px 0;
+    display:grid;
+    grid-template-columns:35% 65%;
+    gap:30px;
+    align-items:center;
+}
+
+.value-text{
+    padding-right:30px;
+}
+
+.value-text h2,
+.section-heading h2{
+    font-size:20px;
+    font-weight:500;
+    margin:9px 0;
+}
+
+.value-box{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    border:1px solid #292929;
+    border-radius:6px;
+    padding:17px;
+}
+
+.value-box>div{
+    padding:12px;
+}
+
+.icon{
+    width:25px;
+    height:25px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    border:1px solid #7138ed;
+    color:#8b51ff;
+    border-radius:50%;
+    font-size:9px;
+}
+
+.value-box h3{
+    display:inline;
+    font-size:8px;
+    margin-left:7px;
+    font-weight:500;
+}
+
+.value-box p{
+    color:#777;
+    font-size:6px;
+    line-height:1.6;
+    margin-top:9px;
+}
+
+.achievements,
+.experience,
+.team{
+    width:82%;
+    max-width:1200px;
+    margin:0 auto;
+    padding:45px 0;
+}
+
+.section-heading{
+    margin-bottom:25px;
+}
+
+.achievement-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+.achievement-grid>div{
+    min-height:105px;
+    border:1px solid #292929;
+    border-radius:5px;
+    padding:18px;
+    background:#111;
+}
+
+.achievement-grid h3{
+    font-size:9px;
+    font-weight:500;
+    margin-bottom:13px;
+}
+
+.achievement-grid p{
+    color:#777;
+    font-size:6px;
+    line-height:1.7;
+}
+
+.experience{
+    padding-top:25px;
+}
+
+.experience-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+.experience-card{
+    min-height:130px;
+    padding:15px;
+    border:1px solid #292929;
+    border-radius:5px;
+    background:#111;
+}
+
+.experience-card small{
+    color:#888;
+    font-size:5px;
+}
+
+.experience-card h3{
+    font-size:8px;
+    font-weight:500;
+    margin:13px 0 8px;
+}
+
+.experience-card p{
+    color:#777;
+    font-size:6px;
+    line-height:1.7;
+}
+
+.team{
+    padding-bottom:80px;
+}
+
+@media(max-width:800px){
+    header{
+        padding:0 4%;
+    }
+
+    nav{
+        display:none;
+    }
+
+    .journey,
+    .values,
+    .achievements,
+    .experience,
+    .team{
+        width:90%;
+    }
+
+    .journey{
+        grid-template-columns:1fr;
+        gap:25px;
+    }
+
+    .journey-image{
+        order:-1;
+        height:260px;
+    }
+
+    .values{
+        grid-template-columns:1fr;
+    }
+
+    .value-text{
+        padding-right:0;
+    }
+
+    .achievement-grid,
+    .experience-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media(max-width:500px){
+    header{
+        height:45px;
+    }
+
+    .logo{
+        font-size:8px;
+    }
+
+    header button{
+        font-size:5px;
+        padding:6px 8px;
+    }
+
+    .journey{
+        padding:30px 0;
+    }
+
+    .journey-image{
+        height:220px;
+    }
+
+    h1{
+        font-size:20px;
+    }
+
+    .stats{
+        gap:4px;
+    }
+
+    .stats div{
+        padding:10px 5px;
+    }
+
+    .stats strong{
+        font-size:10px;
+    }
+
+    .stats span{
+        font-size:4px;
+    }
+
+    .value-box{
+        grid-template-columns:1fr;
+    }
+
+    .achievement-grid,
+    .experience-grid{
+        grid-template-columns:1fr;
+    }
+
+    .achievement-grid>div,
+    .experience-card{
+        min-height:110px;
+    }
+}
